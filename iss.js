@@ -52,7 +52,7 @@ const fetchCoordsByIp = function(ip, callback) {
       return;
     }
 
-    const {latitude, longitude} = JSON.parse(body).data;
+    const {latitude, longitude} = JSON.parse(body);
     callback(null, {latitude, longitude});
 
   });
